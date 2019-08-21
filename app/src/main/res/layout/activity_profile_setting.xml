@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/setting_back_activity"
+    tools:context=".profileSetting">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prof_setting_toolbar"
+        android:background="?attr/colorPrimary"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_width="4dp"
+            app:civ_border_color="#696969"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Profile User name"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="16dp"
+            android:id="@+id/prof_name"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone number (optional)"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="16dp"
+            android:id="@+id/prof_number_phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/setbackbtn"
+            android:padding="10dp"
+            android:layout_margin="16dp"
+            android:shadowRadius="8"
+            android:onClick="save"
+            />
+    </LinearLayout>
+
+</LinearLayout>

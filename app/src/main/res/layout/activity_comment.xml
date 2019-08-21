@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".Comment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_recyclerVeiw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        tools:listitem="@layout/comment_list_item"></android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@drawable/desc_note"
+            android:layout_margin="10dp"
+            android:id="@+id/re"
+
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:hint="Type a Comment (اضف تعليق)"
+                android:padding="10dp"
+                android:background="@drawable/desc_note"
+                android:textStyle="bold"
+                android:id="@+id/Edit_comments"
+                android:textColorHint="@android:color/holo_blue_bright"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/post_comments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/postcomment"
+            android:textAlignment="center"
+            app:backgroundTint="#1095D1"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+        />
+    </LinearLayout>
+
+</LinearLayout>

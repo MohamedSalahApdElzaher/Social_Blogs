@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/setting_back_activity"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="30dp"
+          android:textAllCaps="true"
+          android:textStyle="bold"
+          android:textColor="#51412d"
+          android:id="@+id/textsocial"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#51412d"
+            android:id="@+id/textmemorize"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="User Email"
+        android:layout_margin="16dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:shadowRadius="6"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_login"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="16dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="User Password"
+        android:textSize="25dp"
+        android:id="@+id/pass_login"
+        android:shadowRadius="6"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_pass"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/setbackbtn"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        android:shadowRadius="8"
+        android:onClick="login"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Creat new account ?"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:gravity="bottom"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" sign up "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:onClick="creat_acc"
+            android:id="@+id/text_have_acc"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_touch_app_black_24dp"
+
+
+           />
+    </LinearLayout>
+
+
+
+</LinearLayout>

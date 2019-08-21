@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="shamed">@android:color/holo_red_light</color>
+    <color name="shame">@android:color/holo_blue_dark</color>
+    <color name="haha">@android:color/holo_orange_light</color>
+    <color name="sad">@android:color/holo_orange_dark</color>
+    <color name="love">@android:color/holo_red_dark</color>
+    <color name="hand">@android:color/white</color>
+</resources>

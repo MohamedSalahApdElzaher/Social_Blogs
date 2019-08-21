@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeId"
+        android:icon="@mipmap/homeicon"
+        android:title="Home" />
+    <item
+        android:id="@+id/notificationId"
+        android:icon="@drawable/ic_watch_later_black_24dp"
+        android:title="About" />
+    <item
+        android:id="@+id/PROFILEID"
+        android:icon="@mipmap/profileicon"
+        android:title="Profile" />
+</menu>
